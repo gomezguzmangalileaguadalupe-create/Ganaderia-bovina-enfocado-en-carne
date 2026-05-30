@@ -1,6 +1,4 @@
-
-
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -8,10 +6,13 @@
 
 <title>Mercado Justo | Dashboard Ganadero</title>
 
-<link href="https://galileagomez08-dashboard-ganaderia-bovina-mercado-justo.hf.space">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 
+/* =========================
+   VARIABLES
+========================= */
 :root{
     --bg:#f6f8fc;
     --card:#ffffff;
@@ -28,6 +29,9 @@ body.dark{
     --muted:#9ca3af;
 }
 
+/* =========================
+   BASE
+========================= */
 body{
     margin:0;
     font-family:'Inter',sans-serif;
@@ -36,7 +40,9 @@ body{
     transition:0.3s;
 }
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
 nav{
     position:fixed;
     top:0;
@@ -66,7 +72,9 @@ nav a{
     cursor:pointer;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero{
     padding:120px 20px 40px;
     text-align:center;
@@ -83,7 +91,9 @@ nav a{
     margin:auto;
 }
 
-/* KPI */
+/* =========================
+   KPI
+========================= */
 .kpi-container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -108,10 +118,12 @@ nav a{
     color:var(--muted);
 }
 
-/* DASHBOARD */
-.dashboard{
-    max-width:1100px;
-    margin:40px auto;
+/* =========================
+   SECCIONES
+========================= */
+section{
+    max-width:1000px;
+    margin:auto;
     padding:20px;
 }
 
@@ -120,6 +132,20 @@ nav a{
     padding:20px;
     border-radius:15px;
     box-shadow:var(--shadow);
+    margin-bottom:20px;
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+.dashboard{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
 }
 
 iframe{
@@ -129,25 +155,14 @@ iframe{
     border-radius:12px;
 }
 
-/* INTRO */
-.intro{
-    max-width:1000px;
-    margin:40px auto;
-    padding:20px;
-}
-
-.intro p{
-    line-height:1.7;
-    color:var(--muted);
-}
-
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer{
     text-align:center;
     padding:30px;
     color:var(--muted);
 }
-
 </style>
 </head>
 
@@ -171,18 +186,30 @@ footer{
     <h1>🌾 Mercado Justo</h1>
     <p>
         Plataforma inteligente para análisis y predicción del mercado bovino en México,
-        basada en ciencia de datos e inteligencia artificial.
+        basada en ciencia de datos, machine learning y econometría.
     </p>
 </div>
 
-<!-- INTRODUCCIÓN (AQUÍ LO QUE ME PEDISTE) -->
-<section id="intro" class="intro">
+<!-- INTRO + OBJETIVO -->
+<section id="intro">
 
     <div class="card">
         <h2>📖 Introducción</h2>
 
         <p>
             El sector agropecuario mexicano representa uno de los componentes más relevantes para la estabilidad económica, la seguridad alimentaria y el desarrollo social del país. Dentro de este contexto, la ganadería bovina destinada a la producción de carne ocupa una posición estratégica debido a su capacidad para generar empleo, fortalecer las economías rurales y abastecer tanto al mercado nacional como internacional. Sin embargo, los pequeños y medianos productores pecuarios enfrentan un entorno altamente competitivo y vulnerable, caracterizado por la volatilidad de los precios, el incremento constante en los costos de producción y la dependencia de cadenas de intermediación que reducen significativamente sus márgenes de ganancia.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🎯 Objetivo General</h2>
+
+        <p>
+            Desarrollar un sistema metodológico predictivo y prescriptivo fundamentado en minería de datos,
+            machine learning, modelos econométricos e investigación de operaciones sobre una base de catorce mil
+            registros comerciales, para modelar las fluctuaciones del precio por kilogramo de carne bovina en la
+            región centro del país y determinar el volumen óptimo de distribución logística que maximice el beneficio
+            financiero de los pequeños y medianos productores frente a las asimetrías del mercado tradicional.
         </p>
     </div>
 
@@ -202,8 +229,8 @@ footer{
     </div>
 
     <div class="kpi">
-        <h3>📈 Tendencia</h3>
-        <p>Estable</p>
+        <h3>📈 Mercado</h3>
+        <p>Analizado</p>
     </div>
 
 </div>
@@ -214,9 +241,7 @@ footer{
     <div class="card">
         <h2>📊 Dashboard Ganadero</h2>
 
-        <p style="color:var(--muted)">
-            Visualización interactiva del sistema de predicción del mercado bovino.
-        </p>
+        <p>Visualización del sistema predictivo del mercado bovino.</p>
 
         <iframe src="https://galileagomez08-dashboard-ganaderia-bovina-mercado-justo.hf.space"></iframe>
     </div>
@@ -230,3 +255,4 @@ footer{
 
 </body>
 </html>
+
