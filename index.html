@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+
+        <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -6,13 +8,10 @@
 
 <title>Mercado Justo | Dashboard Ganadero</title>
 
-<link href="https://galileagomez08-dashboard-ganaderia-bovina-mercado-justo.hf.space" rel="stylesheet">
+<link href="https://galileagomez08-dashboard-ganaderia-bovina-mercado-justo.hf.space">
 
 <style>
 
-/* =========================
-   VARIABLES
-========================= */
 :root{
     --bg:#f6f8fc;
     --card:#ffffff;
@@ -29,9 +28,6 @@ body.dark{
     --muted:#9ca3af;
 }
 
-/* =========================
-   BASE
-========================= */
 body{
     margin:0;
     font-family:'Inter',sans-serif;
@@ -40,9 +36,7 @@ body{
     transition:0.3s;
 }
 
-/* =========================
-   NAV
-========================= */
+/* NAV */
 nav{
     position:fixed;
     top:0;
@@ -72,9 +66,7 @@ nav a{
     cursor:pointer;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 .hero{
     padding:120px 20px 40px;
     text-align:center;
@@ -91,9 +83,7 @@ nav a{
     margin:auto;
 }
 
-/* =========================
-   KPI CARDS
-========================= */
+/* KPI */
 .kpi-container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -118,9 +108,7 @@ nav a{
     color:var(--muted);
 }
 
-/* =========================
-   DASHBOARD
-========================= */
+/* DASHBOARD */
 .dashboard{
     max-width:1100px;
     margin:40px auto;
@@ -141,16 +129,26 @@ iframe{
     border-radius:12px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* INTRO */
+.intro{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.intro p{
+    line-height:1.7;
+    color:var(--muted);
+}
+
+/* FOOTER */
 footer{
     text-align:center;
     padding:30px;
     color:var(--muted);
 }
-</style>
 
+</style>
 </head>
 
 <body>
@@ -161,6 +159,7 @@ footer{
 
     <div>
         <a href="#inicio">Inicio</a>
+        <a href="#intro">Introducción</a>
         <a href="#dashboard">Dashboard</a>
     </div>
 
@@ -175,6 +174,19 @@ footer{
         basada en ciencia de datos e inteligencia artificial.
     </p>
 </div>
+
+<!-- INTRODUCCIÓN (AQUÍ LO QUE ME PEDISTE) -->
+<section id="intro" class="intro">
+
+    <div class="card">
+        <h2>📖 Introducción</h2>
+
+        <p>
+            El sector agropecuario mexicano representa uno de los componentes más relevantes para la estabilidad económica, la seguridad alimentaria y el desarrollo social del país. Dentro de este contexto, la ganadería bovina destinada a la producción de carne ocupa una posición estratégica debido a su capacidad para generar empleo, fortalecer las economías rurales y abastecer tanto al mercado nacional como internacional. Sin embargo, los pequeños y medianos productores pecuarios enfrentan un entorno altamente competitivo y vulnerable, caracterizado por la volatilidad de los precios, el incremento constante en los costos de producción y la dependencia de cadenas de intermediación que reducen significativamente sus márgenes de ganancia.
+        </p>
+    </div>
+
+</section>
 
 <!-- KPI -->
 <div class="kpi-container">
