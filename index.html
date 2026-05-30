@@ -212,6 +212,95 @@ footer{
             financiero de los pequeños y medianos productores frente a las asimetrías del mercado tradicional.
         </p>
     </div>
+   <!-- LIBRERÍAS UTILIZADAS -->
+<div class="card">
+    <h2>🛠️ Librerías Utilizadas</h2>
+
+    <p>
+        El desarrollo de la plataforma <strong>Mercado Justo</strong> requirió la integración de diversas
+        herramientas especializadas en procesamiento masivo de datos, análisis estadístico,
+        machine learning, optimización logística, visualización de información y desarrollo de
+        interfaces interactivas. Estas librerías permitieron construir un sistema robusto capaz
+        de transformar datos comerciales en información estratégica para la toma de decisiones
+        dentro del sector ganadero.
+    </p>
+
+    <h3>📊 1. Big Data y Limpieza de Datos</h3>
+
+    <p>
+        <strong>pyspark.sql.SparkSession:</strong> Inicializa el entorno de Apache Spark para procesar miles de datos masivos.
+    </p>
+
+    <p>
+        <strong>pyspark.sql.functions:</strong> Funciones nativas para limpiar texto, eliminar signos de pesos ($), comas y espacios en blanco.
+    </p>
+
+    <p>
+        <strong>pyspark.sql.types:</strong> Define los tipos de datos estructurados de las columnas, incluyendo fechas, números decimales y enteros.
+    </p>
+
+    <h3>📈 2. Manipulación de Datos y Matemáticas</h3>
+
+    <p>
+        <strong>pandas:</strong> Carga el archivo CSV original y convierte los datos limpios para utilizarlos en los modelos predictivos.
+    </p>
+
+    <p>
+        <strong>numpy:</strong> Realiza cálculos matemáticos avanzados y genera datos aleatorios para simulaciones y pruebas.
+    </p>
+
+    <h3>🤖 3. Modelos Predictivos y Machine Learning (Fases 1 y 2)</h3>
+
+    <p>
+        <strong>statsmodels.tsa.statespace.sarimax.SARIMAX:</strong> Modelo estadístico utilizado para proyectar precios detectando patrones estacionales y tendencias temporales.
+    </p>
+
+    <p>
+        <strong>prophet.Prophet:</strong> Librería desarrollada por Facebook para predecir series de tiempo considerando tendencias, estacionalidades y eventos especiales.
+    </p>
+
+    <p>
+        <strong>sklearn.ensemble.RandomForestRegressor:</strong> Algoritmo de Machine Learning basado en bosques aleatorios para estimar el comportamiento futuro de los precios.
+    </p>
+
+    <p>
+        <strong>sklearn.preprocessing.LabelEncoder:</strong> Convierte variables categóricas como estados o tipos de corte en valores numéricos para ser procesados por los modelos.
+    </p>
+
+    <h3>🚚 4. Logística y Mapas (Fase 4)</h3>
+
+    <p>
+        <strong>networkx:</strong> Modela la red de transporte mediante teoría de grafos, representando estados como nodos y carreteras como conexiones.
+    </p>
+
+    <p>
+        <strong>folium:</strong> Renderiza mapas interactivos de la República Mexicana y permite visualizar rutas óptimas de distribución.
+    </p>
+
+    <h3>📊 5. Interfaz Gráfica y Visualización</h3>
+
+    <p>
+        <strong>gradio:</strong> Desarrolla la aplicación web interactiva con pestañas, botones, controles y visualizaciones para facilitar el uso del sistema.
+    </p>
+
+    <p>
+        <strong>matplotlib.pyplot:</strong> Genera gráficas estáticas para analizar la evolución histórica de los precios.
+    </p>
+
+    <p>
+        <strong>plotly:</strong> Crea gráficos dinámicos e interactivos donde el usuario puede explorar la información detalladamente.
+    </p>
+
+    <h3>⚙️ 6. Sistema</h3>
+
+    <p>
+        <strong>datetime:</strong> Gestiona formatos de fecha y tiempo necesarios para el análisis y las predicciones.
+    </p>
+
+    <p>
+        <strong>warnings:</strong> Permite controlar y ocultar advertencias del sistema para mantener una ejecución más limpia.
+    </p>
+</div>
 
 </section>
 
@@ -255,4 +344,3 @@ footer{
 
 </body>
 </html>
-
