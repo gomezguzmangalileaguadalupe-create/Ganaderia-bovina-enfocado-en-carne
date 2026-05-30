@@ -1,2 +1,15 @@
 # Ganader-a-bovina-enfocado-en-carne-
-El proyecto "Ganadería bovina enfocado en carne" usa ciencia de datos y las 4 P's del marketing para proteger a los productores en México frente a intermediarios. Procesando 14,000 datos con PySpark, predice precios mediante Random Forest e integra el Algoritmo de Kruskal para optimizar las rutas y costos de transporte
+# Mercado Justo: Análisis y Predicción de Precios (Ganadería Bovina)
+
+Este proyecto corresponde al desarrollo analítico del problema prototípico enfocado en el sector de la carne bovina en México, desarrollado para la **Licenciatura en Ciencias de Datos para Negocios** (Grupo 502).
+
+## 🚀 Ver la Aplicación en Vivo
+Puedes interactuar con el Dashboard automatizado (Modelos predictivos, optimización logística y analítica con PySpark y Gradio) haciendo clic en el siguiente enlace:
+
+👉 **[Entrar al Dashboard de Mercado Justo](https://galileagomez08-dashboard-ganaderia-bovina-mercado-justo.hf.space)**
+
+## 👥 Integrantes del Equipo
+* Megan Cabrera Dimas
+* Galilea Guadalupe Gomez Guzman
+* Jonatan Isaac Lopez Mora
+* Marco Antonio Torres Flores
