@@ -193,7 +193,7 @@ footer{
 
 <!-- NAV -->
 <nav>
-    <div>🌾 Mercado Justo</div>
+    <div>🐮 Ganaderia Bovina</div>
 
     <div>
         <a href="#inicio">Inicio</a>
@@ -201,7 +201,7 @@ footer{
         <a href="#dashboard">Dashboard</a>
     </div>
 
-    <button class="toggle" onclick="document.body.classList.toggle('dark')">🌙</button>
+    <button class="toggle" onclick="document.body.classList.toggle('dark')">🌑</button>
 </nav>
 
 <!-- HERO -->
@@ -231,91 +231,58 @@ Los pequeños y medianos ganaderos bovinos en México operan a ciegas, perdiendo
 Crear un sistema que pronostique precios y optimice decisiones logísticas, democratizando la información para hacer a los productores más competitivos, rentables y sustentables.
         </p>
     </div>
-   <!-- LIBRERÍAS UTILIZADAS -->
-<div class="card">
-    <h2> Hoja de Ruta</h2>
+   <!-- LIbrerias utilizadas -->
+   
+<section class="card">
+<h2>Metodología del Proyecto</h2>
 
-
-    <h3> 1. Big Data y Limpieza de Datos</h3>
-
-    <p>
-        <strong>pyspark.sql.SparkSession:</strong> Inicializa el entorno de Apache Spark para procesar miles de datos masivos.
-    </p>
-
-    <p>
-        <strong>pyspark.sql.functions:</strong> Funciones nativas para limpiar texto, eliminar signos de pesos ($), comas y espacios en blanco.
-    </p>
-
-    <p>
-        <strong>pyspark.sql.types:</strong> Define los tipos de datos estructurados de las columnas, incluyendo fechas, números decimales y enteros.
-    </p>
-
-    <h3>📈 2. Manipulación de Datos y Matemáticas</h3>
-
-    <p>
-        <strong>pandas:</strong> Carga el archivo CSV original y convierte los datos limpios para utilizarlos en los modelos predictivos.
-    </p>
-
-    <p>
-        <strong>numpy:</strong> Realiza cálculos matemáticos avanzados y genera datos aleatorios para simulaciones y pruebas.
-    </p>
-
-    <h3>🤖 3. Modelos Predictivos y Machine Learning (Fases 1 y 2)</h3>
-
-    <p>
-        <strong>statsmodels.tsa.statespace.sarimax.SARIMAX:</strong> Modelo estadístico utilizado para proyectar precios detectando patrones estacionales y tendencias temporales.
-    </p>
-
-    <p>
-        <strong>prophet.Prophet:</strong> Librería desarrollada por Facebook para predecir series de tiempo considerando tendencias, estacionalidades y eventos especiales.
-    </p>
-
-    <p>
-        <strong>sklearn.ensemble.RandomForestRegressor:</strong> Algoritmo de Machine Learning basado en bosques aleatorios para estimar el comportamiento futuro de los precios.
-    </p>
-
-    <p>
-        <strong>sklearn.preprocessing.LabelEncoder:</strong> Convierte variables categóricas como estados o tipos de corte en valores numéricos para ser procesados por los modelos.
-    </p>
-
-    <h3>🚚 4. Logística y Mapas (Fase 4)</h3>
-
-    <p>
-        <strong>networkx:</strong> Modela la red de transporte mediante teoría de grafos, representando estados como nodos y carreteras como conexiones.
-    </p>
-
-    <p>
-        <strong>folium:</strong> Renderiza mapas interactivos de la República Mexicana y permite visualizar rutas óptimas de distribución.
-    </p>
-
-    <h3>📊 5. Interfaz Gráfica y Visualización</h3>
-
-    <p>
-        <strong>gradio:</strong> Desarrolla la aplicación web interactiva con pestañas, botones, controles y visualizaciones para facilitar el uso del sistema.
-    </p>
-
-    <p>
-        <strong>matplotlib.pyplot:</strong> Genera gráficas estáticas para analizar la evolución histórica de los precios.
-    </p>
-
-    <p>
-        <strong>plotly:</strong> Crea gráficos dinámicos e interactivos donde el usuario puede explorar la información detalladamente.
-    </p>
-
-    <h3>⚙️ 6. Sistema</h3>
-
-    <p>
-        <strong>datetime:</strong> Gestiona formatos de fecha y tiempo necesarios para el análisis y las predicciones.
-    </p>
-
-    </p>
-</div>
-
-   <p>
-    <strong>warnings:</strong> Permite controlar y ocultar advertencias del sistema para mantener una ejecución más limpia.
+<p>
+El desarrollo del proyecto <strong>Mercado Justo</strong> se enfocó en transformar información histórica
+del mercado de carne bovina en conocimiento útil para apoyar la toma de decisiones de pequeños y
+medianos productores ganaderos.
 </p>
-</div>
 
+<p>
+En una primera etapa se realizó la recopilación y depuración de más de 14,000 registros históricos
+relacionados con precios, ventas, demanda, oferta, inflación, temperatura y características productivas
+del sector ganadero. Posteriormente, la información fue validada y organizada para garantizar su calidad
+y consistencia antes de ser utilizada en los análisis.
+</p>
+
+<p>
+Una vez preparada la base de datos, se llevó a cabo un análisis exploratorio que permitió identificar
+patrones de comportamiento, tendencias de mercado y factores que influyen en las variaciones del precio
+de la carne bovina. Este análisis facilitó la comprensión de las condiciones económicas y productivas que
+impactan directamente a los productores.
+</p>
+
+<p>
+Posteriormente se desarrollaron modelos predictivos capaces de estimar el comportamiento futuro de los
+precios mediante el aprendizaje obtenido de los registros históricos. Estos modelos permiten generar
+proyecciones que ayudan a reducir la incertidumbre y mejorar la planeación comercial.
+</p>
+
+<p>
+Además del componente predictivo, se implementó un modelo de optimización orientado a mejorar la
+distribución logística. A partir de la evaluación de rutas y costos de transporte, se determinaron
+estrategias que permiten reducir gastos operativos y aumentar la eficiencia en la comercialización de los
+productos ganaderos.
+</p>
+
+<p>
+Los resultados obtenidos fueron integrados en una plataforma interactiva que permite visualizar
+indicadores, tendencias, predicciones y recomendaciones de manera sencilla. Esto facilita que los
+productores puedan interpretar la información y utilizarla como apoyo para la toma de decisiones.
+</p>
+
+<p>
+Finalmente, el proyecto demuestra cómo la Ciencia de Datos puede contribuir al fortalecimiento del
+sector agropecuario mediante herramientas que promueven una comercialización más eficiente,
+transparente y equitativa, favoreciendo el desarrollo económico de las comunidades ganaderas.
+</p>
+
+
+</section>
 <div class="card">
     <h2>✅ Conclusión</h2>
 
